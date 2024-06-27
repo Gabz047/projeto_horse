@@ -1,22 +1,39 @@
 <template>
   <Header />
   <main>
-    <section class="container-presentation">
-      <div class="box-texts-presentation">
-        <div class="box-left-text">
-          <h1 class="tittle-presentation">HORSEBACK</h1>
-          <h2 class="subtittle-presentation">Explore UK from the saddle</h2>
-        </div>
+    <SectionPresentation />
 
-        <div class="box-right-text">
-          <h3>FOLLOW</h3>
-          <h3>YOUR</h3>
-          <h3>DREAM</h3>
+    <section class="container-sumup">
+      <h2>HORSE RIDING</h2>
+
+      <div class="sumup-texts">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reiciendis perspiciatis
+          fugiat asperiores molestias sapiente eaque saepe tempora omnis aliquid praesentium
+          repudiandae quos consequatur, similique dignissimos dolor molestiae ipsa atque.
+        </p>
+      </div>
+
+      <div class="sumup-texts">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, similique, laboriosam
+          voluptates blanditiis non voluptate eos, error explicabo voluptatum placeat aspernatur
+          debitis perferendis et! Rem est aspernatur obcaecati veniam esse?
+        </p>
+      </div>
+
+      <div class="box-video-out">
+        <p class="background-text">RIDING</p>
+
+        <div class="box-video-inside">
+          <p><<</p>
+          <div class="box-video-inside-video"></div>
+          <p>>></p>
         </div>
       </div>
 
-      <div class="box-button-book">
-        <button>Book Now</button>
+      <div class="show-more-button">
+        <button>Show me More</button>
       </div>
     </section>
   </main>
@@ -24,90 +41,16 @@
 
 <script setup>
 import Header from './components/Header.vue'
+import SectionPresentation from './components/SectionPresentation.vue'
 </script>
 
 <style scoped>
 main {
   height: auto;
 }
-.container-presentation {
-  height: 100vh;
-  background-image: url('./assets/media/cavalo.jpg');
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  width: 100vw;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-.box-texts-presentation {
-  position: relative;
+.container-sumup {
   width: 100%;
-  z-index: 0;
-  height: 50vh;
-  top: 9rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid black;
-}
-
-.box-left-text {
-  margin-left: 3rem;
-}
-
-.tittle-presentation {
-  color: var(--vt-c-white);
-  font-weight: 700;
-  letter-spacing: 0.15rem;
-  font-size: 4rem;
-}
-
-.tittle-presentation::after {
-  content: ' RIDING';
-  letter-spacing: 0.1rem;
-}
-
-.subtittle-presentation {
-  color: var(--vt-c-white);
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-  font-size: 2rem;
-}
-
-.box-right-text {
-  color: var(--vt-c-white);
-  height: 100%;
-  max-width: 17px;
-  display: flex;
-  font-size: 0.7rem;
-  word-break: break-all;
-  margin: 10rem 2rem 0 0;
-  letter-spacing: 1rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box-right-text h3 {
-  font-weight: 600;
-  text-align: center;
-}
-
-.box-button-book {
-  width: 50%;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box-button-book button {
-  border: 2px solid var(--vt-c-white);
-  background-color: transparent;
-  border-radius: 50px;
-  width: 60%;
-  height: 80%;
-  font-size: 1.5rem;
-  color: var(--vt-c-white);
+  height: 100vh;
 }
 </style>
