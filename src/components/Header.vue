@@ -5,7 +5,7 @@ import HeaderNavLinks from './HeaderNavLinks.vue'
 <template>
   <header>
     <div class="box-iconHorse">
-      <img src="./icons/moon-svgrepo-com.svg" />
+      <img src="./icons/iconHorse.png" />
     </div>
 
     <HeaderNavLinks class="headernavlinks" />
@@ -17,9 +17,9 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 5rem;
+  height: 6.5rem;
   position: fixed;
-  border: 2px solid blue;
+  z-index: 1;
 }
 
 .box-iconHorse {
