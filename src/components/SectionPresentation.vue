@@ -1,5 +1,6 @@
 <template>
   <section class="container-presentation">
+    <div class="overlay"></div>
     <div class="box-texts-presentation">
       <div class="box-left-text">
         <h1 class="tittle-presentation">HORSEBACK</h1>
@@ -12,7 +13,6 @@
         <h3>DREAM</h3>
       </div>
     </div>
-
     <div class="box-button-book">
       <button>Book Now</button>
     </div>
@@ -20,6 +20,7 @@
 </template>
 
 <style scoped>
+
 .container-presentation {
   height: 100vh;
   background-image: url('../assets/media/cavalo.jpg');
@@ -28,6 +29,7 @@
   width: 100vw;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 2;
 }
 
 .box-texts-presentation {
@@ -39,11 +41,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
+  z-index: 2;
 }
 
 .box-left-text {
-  margin-left: 3rem;
+  position: relative;
+  left: 3rem;
 }
 
 .tittle-presentation {
@@ -65,12 +68,14 @@
 
 .box-right-text {
   color: var(--vt-c-white);
-  height: 100%;
+  height: 95%;
   max-width: 17px;
   display: flex;
   font-size: 0.7rem;
   word-break: break-all;
-  margin: 10rem 2rem 0 0;
+  position: relative;
+  top: 9rem;
+  right: 3rem;
   letter-spacing: 1rem;
   align-items: center;
   flex-wrap: wrap;
@@ -97,5 +102,13 @@
   height: 70%;
   font-size: 1.4rem;
   color: var(--vt-c-white);
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #DCAA6D 5%, transparent, transparent, transparent);
+  z-index: 1;
 }
 </style>

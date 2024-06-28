@@ -25,6 +25,7 @@ main {
   width: 100%;
   height: 1.6rem;
   align-items: center;
+  margin-right: 1.5rem;
 }
 nav {
   display: flex;

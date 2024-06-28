@@ -1,9 +1,19 @@
 <script setup>
 import HeaderNavLinks from './HeaderNavLinks.vue'
+import { reactive, ref, computed } from 'vue';
+
+
+const backgroundHeader = reactive({
+  desactivate: 'backgroud-color: transparent',
+  activate: 'background-color: black'
+})
+
+
+
 </script>
 
 <template>
-  <header>
+  <header class="header">
     <div class="box-iconHorse">
       <img src="./icons/iconHorse.png" />
     </div>
@@ -13,13 +23,13 @@ import HeaderNavLinks from './HeaderNavLinks.vue'
 </template>
 
 <style scoped>
-header {
+.header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   height: 6.5rem;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
 }
 
 .box-iconHorse {
@@ -34,6 +44,8 @@ header {
 }
 
 .headernavlinks {
-  margin: 1.5rem 1.5rem 0 0;
+  position: relative;
+  right: 1.5rem;
+  top: 1.5rem;
 }
 </style>
