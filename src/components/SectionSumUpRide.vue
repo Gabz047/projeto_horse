@@ -24,7 +24,14 @@
       </div>
     </article>
     <div class="box-video-out">
-      <p class="background-text">RIDING</p>
+      <div class="background-text">
+        <p>R</p>
+        <p>I</p>
+        <p>D</p>
+        <p>I</p>
+        <p>N</p>
+        <p>G</p>
+      </div>
 
       <div class="box-video-inside">
         <p><<</p>
@@ -89,14 +96,18 @@ h2 {
 }
 
 .background-text {
-  font-size: 260px;
-  letter-spacing: 5rem;
-  text-align: center;
+  font-size: 220px;
   position: absolute;
   z-index: 0;
   color: #e2b985;
+  width: 99vw;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid;
+}
+
+.background-text p {
   font-weight: 900;
-  left: 1rem;
 }
 
 .box-video-inside {
