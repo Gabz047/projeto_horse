@@ -1,53 +1,94 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
-const cardColors = ref([])
+const cards = ref([])
 
 onMounted(() => {
   fetch('infos.json').then((response) => {
     response.json().then((cores) => {
-      cardColors.value = cores.cardsColors
+      cards.value = cores
+      console.log(cores[0].src)
     })
   })
+})
+
+const sizes = reactive({
+  main: {
+    width: 'width: 30%',
+    heigth: 'height: 100%'
+  },
+  others: {
+    width: 'width: 26%',
+    heigth: 'height: 80%'
+  },
+  boxsizemain: {
+    width: 'width: 20px',
+    heigth: 'height: 20px'
+  },
+  boxsizeothers: {
+    width: 'width: 15px',
+    heigth: 'height: 15px'
+  },
+  fontSizeMain: {
+    font: 'font-size: 0.72rem'
+  },
+  fontSizeOthers: {
+    font: 'font-size: 0.6rem'
+  }
 })
 </script>
 <template>
   <div class="container-breeds-cards">
-    <div class="breeds-cards-box">
+    <div
+      class="breeds-cards-box"
+      v-for="card in cards"
+      :style="
+        card.id == 1
+          ? [sizes.main.width, sizes.main.heigth]
+          : [sizes.others.width, sizes.others.heigth]
+      "
+    >
       <div class="imgbox">
-        <p>Arabic Horse</p>
+        <p>{{ card.horseBreed }}</p>
       </div>
 
       <div class="information-box">
-        <h3>SOME HORSE BRO IDK</h3>
+        <h3>{{ card.cardsTittle }}</h3>
 
         <div class="information-list">
-          <ul class="main-list">
+          <ul
+            class="main-list"
+            :style="card.id == 1 ? [sizes.fontSizeMain.font] : [sizes.fontSizeOthers.font]"
+          >
             <li class="information-items">
               <p>Colors:</p>
               <ul class="colors-list">
-                <li v-for="cardColor in cardColors" :key="cardColor.id" :style="cardColor.cor"></li>
+                <li
+                  v-for="cardColor in card.cardColors"
+                  :style="
+                    card.id == 1
+                      ? [sizes.boxsizemain.width, sizes.boxsizemain.heigth, cardColor]
+                      : [sizes.boxsizeothers.width, sizes.boxsizeothers.heigth, cardColor]
+                  "
+                ></li>
               </ul>
             </li>
 
             <li class="information-items">
               <p>Something:</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore quaerat tenetur
-                labore corporis dolores.
+                {{ card.cardFistText }}
               </p>
             </li>
             <li class="information-items">
               <p>Something:</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore quaerat tenetur
-                labore corporis dolores.
+                {{ card.cardSecondText }}
               </p>
             </li>
             <li class="information-items">
               <p>Something:</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore quaerat tenetur
-                labore corporis dolores.
+                {{ card.cardsThirdTexts }}
               </p>
             </li>
           </ul>
@@ -58,17 +99,14 @@ onMounted(() => {
 </template>
 <style scoped>
 .container-breeds-cards {
-  width: 100%;
-  height: 65%;
-  border: 2px solid;
+  width: 85%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: top;
 }
 
 .breeds-cards-box {
-  width: 25%;
-  height: 95%;
   border-radius: 20px;
   background-color: #ca9d64;
 }
@@ -76,18 +114,18 @@ onMounted(() => {
 .imgbox {
   height: 55%;
   widows: 100%;
-  background-image: url('../assets/media/cavalo.jpg');
-  background-size: cover;
   border-radius: 20px 20px 0 0;
   display: flex;
   justify-content: end;
   align-items: end;
+  background-image: url('../assets/media/cavalo.jpg');
+  background-size: cover;
 }
 
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .imgbox p {
@@ -130,8 +168,7 @@ onMounted(() => {
   width: 100%;
 }
 
-.information-items p {
-  font-size: 0.7rem;
+.information-items {
   font-weight: 500;
 }
 

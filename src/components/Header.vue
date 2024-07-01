@@ -1,14 +1,11 @@
 <script setup>
 import HeaderNavLinks from './HeaderNavLinks.vue'
-import { reactive, ref, computed } from 'vue';
-
+import { reactive, ref, computed } from 'vue'
 
 const backgroundHeader = reactive({
   desactivate: 'backgroud-color: transparent',
   activate: 'background-color: black'
 })
-
-
 
 </script>
 
@@ -17,7 +14,8 @@ const backgroundHeader = reactive({
     <div class="box-iconHorse">
       <img src="./icons/iconHorse.png" />
     </div>
-
+    <p>{{ x }}</p>
+    <p>{{ y }}</p>
     <HeaderNavLinks class="headernavlinks" />
   </header>
 </template>
