@@ -1,0 +1,92 @@
+@import './base.css';
+
+.container-breeds-cards {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.breeds-cards-box {
+  border-radius: 20px;
+  background-color: var(--vt-c-brown);
+}
+
+.imgbox {
+  height: 55%;
+  widows: 100%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-image: url('@/assets/media/cavalo.jpg');
+  background-size: cover;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imgbox p {
+  font-size: 1rem;
+  background-color: rgba(223, 207, 207, 0.5);
+  padding: 0.3rem 2rem;
+}
+
+.information-box {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--vt-c-white);
+}
+
+.information-box h3 {
+  color: var(--vt-c-white);
+  font-weight: 500;
+}
+
+.information-list {
+  width: 100%;
+  display: flex;
+  list-style: none;
+}
+
+.information-list ul {
+  padding: 0;
+}
+.information-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.information-items li {
+  display: flex;
+  width: 100%;
+}
+
+.information-items {
+  font-weight: 500;
+}
+
+.information-items p {
+  margin-left: 0.5rem;
+}
+
+.colors-list {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  margin-right: 8rem;
+}
+
+.colors-list li {
+  width: 20px;
+  height: 20px;
+}

@@ -12,10 +12,8 @@ const backgroundHeader = reactive({
 <template>
   <header class="header">
     <div class="box-iconHorse">
-      <img src="./icons/iconHorse.png" />
+      <img src="../icons/iconHorse.png" />
     </div>
-    <p>{{ x }}</p>
-    <p>{{ y }}</p>
     <HeaderNavLinks class="headernavlinks" />
   </header>
 </template>

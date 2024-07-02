@@ -8,10 +8,10 @@
 </template>
 
 <script setup>
-import Header from './components/Header.vue'
-import SectionPresentation from './components/SectionPresentation.vue'
-import SectionSumUpRide from './components/SectionSumUpRide.vue'
-import BreedsHorse from './components/BreedsHorse.vue'
+import Header from './components/HeaderComponents/Header.vue'
+import SectionPresentation from './components/MainComponents/SectionPresentation.vue'
+import SectionSumUpRide from './components/MainComponents/SectionSumUpRide.vue'
+import BreedsHorse from './components/MainComponents/BreedsHorse.vue'
 </script>
 
 <style scoped>

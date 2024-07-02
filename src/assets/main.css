@@ -1,4 +1,8 @@
 @import './base.css';
+@import './breedsHorseCard.css';
+@import './sectionPresentation.css';
+@import './boxVideoSumUpRide.css';
+@import './menuIcon.css';
 
 #app {
   margin: 0 auto;

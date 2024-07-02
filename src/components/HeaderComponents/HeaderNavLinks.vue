@@ -12,7 +12,7 @@ import MenuIcon from './MenuIcon.vue'
       <p class="nav-links">CONTACTS</p>
     </nav>
 
-   <MenuIcon />
+    <MenuIcon />
   </main>
 </template>
 
@@ -20,7 +20,7 @@ import MenuIcon from './MenuIcon.vue'
 main {
   display: flex;
   justify-content: end;
-  gap: 5rem;
+  gap: 3.5rem;
   max-width: 70vw;
   width: 100%;
   height: 1.6rem;
@@ -35,6 +35,6 @@ nav {
 .nav-links {
   color: rgb(255, 255, 255);
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
 }
 </style>
