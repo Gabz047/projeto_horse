@@ -1,39 +1,10 @@
 <script setup>
-import { onMounted, reactive, ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import { sizes, getJSON } from '@/componentsFunctions/breedsHorse'
 const cards = ref([])
 
 onMounted(() => {
-  fetch('infos.json').then((response) => {
-    response.json().then((cores) => {
-      cards.value = cores
-      console.log(cores[0].src)
-    })
-  })
-})
-
-const sizes = reactive({
-  main: {
-    width: 'width: 30%',
-    heigth: 'height: 100%'
-  },
-  others: {
-    width: 'width: 26%',
-    heigth: 'height: 80%'
-  },
-  boxsizemain: {
-    width: 'width: 20px',
-    heigth: 'height: 20px'
-  },
-  boxsizeothers: {
-    width: 'width: 15px',
-    heigth: 'height: 15px'
-  },
-  fontSizeMain: {
-    font: 'font-size: 0.72rem'
-  },
-  fontSizeOthers: {
-    font: 'font-size: 0.6rem'
-  }
+  getJSON(cards)
 })
 </script>
 <template>

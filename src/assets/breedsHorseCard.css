@@ -27,7 +27,7 @@
 .main-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .imgbox p {
@@ -82,7 +82,7 @@
   flex-direction: row;
   width: 40%;
   justify-content: space-between;
-  margin-right: 8rem;
+  margin-left: 2rem;
 }
 
 .colors-list li {
