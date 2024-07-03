@@ -1,12 +1,5 @@
 <script setup>
 import HeaderNavLinks from './HeaderNavLinks.vue'
-import { reactive, ref, computed } from 'vue'
-
-const backgroundHeader = reactive({
-  desactivate: 'backgroud-color: transparent',
-  activate: 'background-color: black'
-})
-
 </script>
 
 <template>
@@ -26,15 +19,14 @@ const backgroundHeader = reactive({
   height: 6.5rem;
   position: fixed;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.582);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(36px);
 }
 
 .box-iconHorse {
   width: 10%;
   height: 90%;
   display: flex;
-  margin: 1.2rem 0 0 1.2rem;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 .box-iconHorse img {

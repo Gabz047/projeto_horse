@@ -62,7 +62,6 @@
 .information-items {
   width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 
 .information-items li {
@@ -75,7 +74,7 @@
 }
 
 .information-items p {
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
 }
 
 .colors-list {
