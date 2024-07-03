@@ -12,7 +12,7 @@ const backgroundHeader = reactive({
 <template>
   <header class="header">
     <div class="box-iconHorse">
-      <img src="../icons/iconHorse.png" />
+      <img src="../icons/whitehorseicon.png" />
     </div>
     <HeaderNavLinks class="headernavlinks" />
   </header>
@@ -26,13 +26,15 @@ const backgroundHeader = reactive({
   height: 6.5rem;
   position: fixed;
   z-index: 100;
+  background-color: rgba(255, 255, 255, 0.582);
+  backdrop-filter: blur(16px);
 }
 
 .box-iconHorse {
   width: 10%;
-  height: 100%;
+  height: 90%;
   display: flex;
-  margin: 0.5rem 0 0 1.5rem;
+  margin: 1.2rem 0 0 1.2rem;
 }
 
 .box-iconHorse img {
