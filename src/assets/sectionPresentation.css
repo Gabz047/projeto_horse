@@ -59,6 +59,11 @@
   height: 70%;
   font-size: 1.4rem;
   color: var(--vt-c-white);
+  transition: 0.3s;
+}
+
+.box-button-book button:hover {
+  margin-bottom: 0.8rem;
 }
 
 .overlay {

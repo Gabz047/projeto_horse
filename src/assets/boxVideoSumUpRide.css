@@ -59,11 +59,17 @@
   height: 70%;
   width: 30%;
   font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.show-more-button button:hover {
+  margin-bottom: 0.8rem;
 }
 
 .arrows {
   width: 64px;
   height: 64px;
+  transition: 0.3s;
 }
 
 .arrows img {

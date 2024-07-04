@@ -7,9 +7,9 @@ import BreedsHorseCard from './BreedsHorseCard.vue'
       <h2>BREEDS OF HORSE</h2>
     </div>
     <div class="container-cards">
-      <div class="arrows"><img src="../icons/lArrow.png" alt="seta apontada para esquerda" /></div>
+      <div class="arrows lA"><img src="../icons/lArrow.png" alt="seta apontada para esquerda" /></div>
       <BreedsHorseCard />
-      <div class="arrows"><img src="../icons/rArrow.png" alt="seta apontada para direita" /></div>
+      <div class="arrows rA"><img src="../icons/rArrow.png" alt="seta apontada para direita" /></div>
     </div>
   </section>
 </template>
