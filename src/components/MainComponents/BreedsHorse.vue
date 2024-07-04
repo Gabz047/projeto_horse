@@ -7,9 +7,9 @@ import BreedsHorseCard from './BreedsHorseCard.vue'
       <h2>BREEDS OF HORSE</h2>
     </div>
     <div class="container-cards">
-      <p class="container-cards-button"><<</p>
+      <div class="arrows"><img src="../icons/lArrow.png" alt="seta apontada para esquerda" /></div>
       <BreedsHorseCard />
-      <p class="container-cards-button">>></p>
+      <div class="arrows"><img src="../icons/rArrow.png" alt="seta apontada para direita" /></div>
     </div>
   </section>
 </template>
@@ -19,7 +19,7 @@ import BreedsHorseCard from './BreedsHorseCard.vue'
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  background-color: #dcaa6d;
+  background-color: var(--vt-c-ligth-brown);
   justify-content: center;
 }
 

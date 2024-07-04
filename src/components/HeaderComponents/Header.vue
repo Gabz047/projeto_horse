@@ -5,7 +5,7 @@ import HeaderNavLinks from './HeaderNavLinks.vue'
 <template>
   <header class="header">
     <div class="box-iconHorse">
-      <img src="../icons/whitehorseicon.png" />
+      <img src="../icons/whitehorseicon.png" alt="icone branco da cabeça de um cavalo"/>
     </div>
     <HeaderNavLinks class="headernavlinks" />
   </header>

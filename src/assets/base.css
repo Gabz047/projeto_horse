@@ -5,6 +5,7 @@
   --vt-c-white-mute: #f2f2f2;
   --vt-c-brown: #ca9d64;
   --vt-c-ligth-brown: #dcaa6d;
+  --vt-c-smooth-brown: #e2b985;
 
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
@@ -14,6 +15,7 @@
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-smooth-light: rgba(223, 207, 207, 0.5);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
   --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 

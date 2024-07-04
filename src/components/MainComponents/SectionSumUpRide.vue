@@ -1,5 +1,5 @@
 <script setup>
-import BoxVideoSumUpRide from './BoxVideoSumUpRide.vue';
+import BoxVideoSumUpRide from './BoxVideoSumUpRide.vue'
 import TextSumUp from './TextSumUp.vue'
 </script>
 <template>
@@ -17,7 +17,7 @@ import TextSumUp from './TextSumUp.vue'
 .container-sumup {
   width: 100vw;
   height: 130vh;
-  background-color: #dcaa6d;
+  background-color: var(--vt-c-ligth-brown);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,5 +37,4 @@ h2 {
   border-bottom: 3px solid var(--vt-c-white);
   color: var(--vt-c-white);
 }
-
 </style>

@@ -1,6 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { sizes, getJSON } from '@/componentsFunctions/breedsHorse'
+import cvl0 from '@/assets/media/cavalo-0.jpg'
+import cvl1 from '@/assets/media/cavalo-1.jpg'
+import cvl2 from '@/assets/media/cavalo-2.jpg'
 const cards = ref([])
 
 onMounted(() => {
@@ -19,6 +22,10 @@ onMounted(() => {
       "
     >
       <div class="imgbox">
+        <img
+          :src="card.id == 0 ? cvl0 : card.id == 1 ? cvl1 : cvl2"
+          alt="imagens de cavalo"
+        />
         <p>{{ card.horseBreed }}</p>
       </div>
 

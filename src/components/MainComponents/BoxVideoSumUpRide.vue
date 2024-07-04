@@ -10,9 +10,13 @@
     </div>
 
     <div class="box-video-inside">
-      <p><<</p>
-      <div class="box-video-inside-video"></div>
-      <p>>></p>
+      <div class="arrows">
+        <img src="../icons/lArrow.png" alt="seta apontada para esquerda" />
+      </div>
+      <div class="box-video-inside-video" alt="imagem de um garoto montado em um cavalo em um evento de hipidismo"></div>
+      <div class="arrows">
+        <img src="../icons/rArrow.png" alt="seta apontada para direita" />
+      </div>
     </div>
   </div>
 
@@ -20,4 +24,3 @@
     <button>Show me More</button>
   </div>
 </template>
-

@@ -1,4 +1,4 @@
-import { reactive} from 'vue'
+import { reactive } from 'vue'
 
 export const sizes = reactive({
   main: {
@@ -32,3 +32,5 @@ export function getJSON(storage) {
     })
   })
 }
+
+

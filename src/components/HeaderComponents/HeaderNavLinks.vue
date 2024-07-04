@@ -33,7 +33,7 @@ nav {
 }
 
 .nav-links {
-  color: rgb(255, 255, 255);
+  color: var(--vt-c-white);
   font-weight: 400;
   font-size: 20px;
 }
